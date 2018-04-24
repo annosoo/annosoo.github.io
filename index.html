@@ -430,8 +430,9 @@
         
           
             <p>折腾感悟:<br>对于一个新技术的学习最佳选择是参考官方文档，其次近期的教学视频。再次书籍。<br>对于出来有段时间的。优先书籍。</p>
-<p>正文:<br>这是一个更新频繁的软件。<br>很多书上的指令在MongoDB v3.6用不了。<br>查看系统服务 run + services.msc（检查mongodb服务是否启动）</p>
-<p>简言之<br>1、下载解压安装<br>2、exe所在文件夹添加到系统环境变量。<br>3、创建数据存储文件夹 data\db，日志文件夹 log（需要手动创建）<br>下面都是两个短横，没显示完全<br>run cmd as admin<br>mongod –directoryperdb –dbpath C:\mongodb\data\db –logpath C:\mongodb\log\mongo.log –logappend –install<br>4、net start MongoDB启动服务<br>5、net stop MongoDB关闭服务</p>
+<p>正文:</p>
+<p>这是一个更新频繁的软件。<br>很多书上的指令在MongoDB v3.6用不了。<br>查看系统服务 run + services.msc（检查mongodb服务是否启动）</p>
+<p>简言之<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1、下载解压安装</span><br><span class="line">2、exe所在文件夹添加到系统环境变量。</span><br><span class="line">3、创建数据存储文件夹 data\db，日志文件夹 log（需要手动创建）  </span><br><span class="line">下面都是两个短横，没显示完全</span><br><span class="line">run cmd as admin</span><br><span class="line">mongod --directoryperdb --dbpath C:\mongodb\data\db --logpath C:\mongodb\log\mongo.log --logappend --install</span><br><span class="line">4、net start MongoDB启动服务</span><br><span class="line">5、net stop MongoDB关闭服务</span><br></pre></td></tr></table></figure></p>
 
           
         
@@ -552,12 +553,12 @@
         
           
             <p>HEXO 用得最频繁的几个指令（参阅他人博客）</p>
-<p>hexo s (hexo server的缩写)<br>启动本地服务器,用于预览主题.默认地址:localhost:4000预览同时可以修改文章内容,保存后刷新页面对配置文件_config.yml的修改，需要重启本地服务器</p>
-<p>hexo n “标题”(hexo new)<br>新建标题文章</p>
-<p>hexo d（hexo deploy）<br>自动生成网站静态文件，部署到设定的仓库</p>
-<p>hexo clean<br>清除缓存文件db.json和已生成的静态文件public。网站异常是可执行试试。</p>
-<p>hexo g（hexo generate）<br>生成静态文件到默认设置的public文件夹。如果自动部署，不需先执行该指令</p>
-<p>常用组合<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p>
+<p>hexo s (hexo server的缩写)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">启动本地服务器,用于预览主题.默认地址:localhost:4000预览同时可以修改文章内容,保存后刷新页面对配置文件_config.yml的修改，需要重启本地服务器</span><br></pre></td></tr></table></figure></p>
+<p>hexo n “标题”(hexo new)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">新建标题文章</span><br></pre></td></tr></table></figure></p>
+<p>hexo d（hexo deploy）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">自动生成网站静态文件，部署到设定的仓库</span><br></pre></td></tr></table></figure></p>
+<p>hexo clean<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">清除缓存文件db.json和已生成的静态文件public。网站异常是可执行试试。</span><br></pre></td></tr></table></figure></p>
+<p>hexo g（hexo generate）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">生成静态文件到默认设置的public文件夹。如果自动部署，不需先执行该指令</span><br></pre></td></tr></table></figure></p>
+<p>常用组合<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure></p>
 
           
         
