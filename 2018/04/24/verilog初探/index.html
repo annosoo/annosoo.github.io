@@ -55,28 +55,32 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="annosoo&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="#FPGA verilog ##基本理解构建硬件电路，无需ASIC（专用集成电路）相比微处理器内核 简单 快速 省电 相比ASIC和MCU：大量并行结构，可实现数字设计领域几乎所有功能 ##注意点善用 IP Core：原厂提供经过验证的IP内核  官方网站文档介绍国际知名开源网站上的IP核：比如www.opencores.org 代码规范：硬禾实战营Verilog代码规范 通过软核构成嵌入式系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="verilog学习">
+<meta property="og:url" content="http://yoursite.com/2018/04/24/verilog初探/index.html">
 <meta property="og:site_name" content="annosoo&#39;s blog">
+<meta property="og:description" content="#FPGA verilog ##基本理解构建硬件电路，无需ASIC（专用集成电路）相比微处理器内核 简单 快速 省电 相比ASIC和MCU：大量并行结构，可实现数字设计领域几乎所有功能 ##注意点善用 IP Core：原厂提供经过验证的IP内核  官方网站文档介绍国际知名开源网站上的IP核：比如www.opencores.org 代码规范：硬禾实战营Verilog代码规范 通过软核构成嵌入式系统">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-08-17T01:30:00.022Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="annosoo&#39;s blog">
-  <link rel="canonical" href="http://yoursite.com/">
+<meta name="twitter:title" content="verilog学习">
+<meta name="twitter:description" content="#FPGA verilog ##基本理解构建硬件电路，无需ASIC（专用集成电路）相比微处理器内核 简单 快速 省电 相比ASIC和MCU：大量并行结构，可实现数字设计领域几乎所有功能 ##注意点善用 IP Core：原厂提供经过验证的IP内核  官方网站文档介绍国际知名开源网站上的IP核：比如www.opencores.org 代码规范：硬禾实战营Verilog代码规范 通过软核构成嵌入式系统">
+  <link rel="canonical" href="http://yoursite.com/2018/04/24/verilog初探/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false,
+    isHome: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>annosoo's blog</title>
+  <title>verilog学习 | annosoo's blog</title>
   
 
 
@@ -213,101 +217,11 @@
         <div class="content-wrap">
             
 
-          <div id="content" class="content page-home">
-            
-  <section id="posts" class="posts-expand">
-      
-
-  <article class="post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/16/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="daiwenji">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/116409-106.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="annosoo's blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2019/08/16/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-16 13:06:17" itemprop="dateCreated datePublished" datetime="2019-08-16T13:06:17+08:00">2019-08-16</time>
-            </span>
-          
+          <div id="content" class="content page-post-detail">
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2018-04-22 13:00:07" itemprop="dateModified" datetime="2018-04-22T13:00:07+08:00">2018-04-22</time>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-
+  <div id="posts" class="posts-expand">
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-      
 
   <article class="post" itemscope itemtype="http://schema.org/Article">
   
@@ -326,9 +240,8 @@
       <meta itemprop="name" content="annosoo's blog">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2018/04/24/verilog初探/" class="post-title-link" itemprop="url">verilog学习</a>
+        <h1 class="post-title" itemprop="name headline">verilog学习
+
           
         </h1>
 
@@ -383,7 +296,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>#FPGA verilog</p>
+        <p>#FPGA verilog</p>
 <p>##基本理解<br>构建硬件电路，无需ASIC（专用集成电路）相比微处理器内核 简单 快速 省电</p>
 <p>相比ASIC和MCU：大量并行结构，可实现数字设计领域几乎所有功能</p>
 <p>##注意点<br>善用 IP Core：原厂提供经过验证的IP内核  官方网站文档介绍<br>国际知名开源网站上的IP核：比如<a href="http://www.opencores.org" target="_blank" rel="noopener">www.opencores.org</a></p>
@@ -442,27 +355,59 @@
 <p>####一致的信号命名风格<br>简洁，清晰，有效是基本的信号命名规则，详见命名规范。<br>全称    缩写    中文含义<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">acknowledge	ack	应答</span><br><span class="line">adress	addr(ad)	地址</span><br><span class="line">arbiter	arb	仲裁</span><br><span class="line">check	chk	校验，如CRC校验</span><br><span class="line">clock	clk	时钟</span><br><span class="line">config	cfg	Configuration,装置</span><br><span class="line">control	ctrl	控制</span><br><span class="line">count	cnt	计数</span><br><span class="line">data in	din(di)	数据输入</span><br><span class="line">data out	dout(do)	数据输出</span><br><span class="line">decode	de	译码</span><br><span class="line">decrease	dec	减一</span><br><span class="line">delay	dly	</span><br><span class="line">disable	dis	不使能</span><br><span class="line">error	err	错误（指示）</span><br><span class="line">enable	en	使能</span><br><span class="line">frame	frm	帧</span><br><span class="line">generate	gen	生成，如CRC生成</span><br><span class="line">grant	gnt	申请通过</span><br><span class="line">increase	inc	加一</span><br><span class="line">input	in(i)	</span><br><span class="line">length	len	（帧、包）长</span><br><span class="line">nmport	nm	网管相关</span><br><span class="line">output	out(o)	</span><br><span class="line">packet不推荐packet	pkt	与帧相同</span><br><span class="line">priority	pri	优先级</span><br><span class="line">pointer	ptr	指针</span><br><span class="line">rd enable	ren	读使能</span><br><span class="line">read	rd	读（操作）</span><br><span class="line">ready	rdy	应答信号或准备好</span><br><span class="line">receive	rx	（帧数据）接收</span><br><span class="line">request	req	（服务、仲裁）请求</span><br><span class="line">reset	rst	</span><br><span class="line">segment	seg	</span><br><span class="line">souce	scr	源（端口）</span><br><span class="line">ststistics	stat	统计</span><br><span class="line">timer	tmr	定时器</span><br><span class="line">switcher	sf	Switch fabric</span><br><span class="line">temporary	tmp	临时</span><br><span class="line">transmit	tx	发送（帧数据）相关</span><br><span class="line">Valid	vld(v)	有效、校验正确</span><br><span class="line">wr enable	wen	写使能</span><br><span class="line">write	wr	写操作</span><br><span class="line">a.端口、信号、变量名的所有字母小写：函数名、宏定义、参数定义用大写 </span><br><span class="line">b.使用简称、缩略词（加上列表） </span><br><span class="line">c.基于含义命名（避免以数字命名的简单做法），含义可分段（最多分三段），每一小段之间加下划线”_”,如tx_data_val;命名长度一般限制在20个字符以内。 </span><br><span class="line">d.低电平有效信号，加后缀”_n”,如 rst_n </span><br><span class="line">e.无条件寄存的寄存信号在原信号上加ff1、ff2… 如原信号 data_in, 寄存一拍data_in_ff1,寄存两拍data_in_ff2 </span><br><span class="line">f.不能用 ”reg”,作为最后的后缀名，因为综合工具会给寄存器自动加上_reg, 如果命名里就用_reg作为后缀名则扰乱了网表的可读性。</span><br></pre></td></tr></table></figure></p>
 <p>####模板示例<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br></pre></td><td class="code"><pre><span class="line">//********************************************************</span><br><span class="line">//</span><br><span class="line">//   Copyright(c)2016, ECBC </span><br><span class="line">//   All rights reserved</span><br><span class="line">//</span><br><span class="line">//   File name       :   MODULE_NAME.v</span><br><span class="line">//   Module name     :   MODULE_NAME</span><br><span class="line">//   Author          :   STEP</span><br><span class="line">//	 Description	 ：  </span><br><span class="line">//   Email           :   Author’s email</span><br><span class="line">//   Data            :   2016/08/01</span><br><span class="line">//   Version         :   current version, just this: v1.0</span><br><span class="line">//</span><br><span class="line">//   Abstract        :   </span><br><span class="line">//</span><br><span class="line">//   Modification history</span><br><span class="line">//   ----------------------------------------------------------------------------</span><br><span class="line">// Version       Data(2016/08/01)   V1.0</span><br><span class="line">// Description</span><br><span class="line">//</span><br><span class="line">//*************************************************************</span><br><span class="line">//*******************</span><br><span class="line">//DEFINE(s)</span><br><span class="line">//*******************</span><br><span class="line"> </span><br><span class="line">//*******************</span><br><span class="line">//DEFINE(s)</span><br><span class="line">//*******************</span><br><span class="line">//`define UDLY 1    //Unit delay, for non-blocking assignments in sequential logic</span><br><span class="line"> </span><br><span class="line">//*******************</span><br><span class="line">//DEFINE MODULE PORT</span><br><span class="line">//*******************</span><br><span class="line">module MODULE_NAME</span><br><span class="line">(</span><br><span class="line">	//INPUT</span><br><span class="line">	rest_n         ,</span><br><span class="line">	clk_*          ,</span><br><span class="line">	a_din          ,</span><br><span class="line">	b_din          ,</span><br><span class="line"> </span><br><span class="line">	//OUTPUT</span><br><span class="line">	a_dout         ,</span><br><span class="line">	b_dout</span><br><span class="line">);</span><br><span class="line"> </span><br><span class="line">	//*******************</span><br><span class="line">	//DEFINE PARAMETER</span><br><span class="line">	//*******************</span><br><span class="line">	parameter			T1S	=	24_999_999;</span><br><span class="line"> </span><br><span class="line">	//*******************</span><br><span class="line">	//DEFINE INPUT</span><br><span class="line">	//*******************</span><br><span class="line">	input             	rst_n		;    //reset, active low .</span><br><span class="line">	input             	clk_*		;    //clock signal, 50M .</span><br><span class="line">	input  [n:0]		a_din		;    //*****</span><br><span class="line">	input  [k:0]       	b_din		;    //*****</span><br><span class="line"> </span><br><span class="line">	//*******************</span><br><span class="line">	//DEFINE OUTPUT</span><br><span class="line">	//*******************</span><br><span class="line">	output  [m:0]    	a_dout      ;    //*****</span><br><span class="line">	output  [i:0]     	b_dout      ;    //*****</span><br><span class="line"> </span><br><span class="line">	//********************</span><br><span class="line">	//OUTPUT ATTRIBUTE</span><br><span class="line">	//********************</span><br><span class="line">	//REGS</span><br><span class="line">	reg   [m:0]     	a_dout		;    //*****</span><br><span class="line"> </span><br><span class="line">	//WIRES</span><br><span class="line">	wire  [i:0]      	b_dout		;    //*****</span><br><span class="line"> </span><br><span class="line">	//*********************</span><br><span class="line">	//INNER SIGNAL DECLARATION</span><br><span class="line">	//*********************</span><br><span class="line">	//REGS</span><br><span class="line">	reg   [3:0]       	counter     ;    //*****</span><br><span class="line"> </span><br><span class="line">	//WIRES</span><br><span class="line">	wire  [7:0]       	temp1		;    //*****</span><br><span class="line"> </span><br><span class="line">	//*********************</span><br><span class="line">	//INSTANTCE MODULE</span><br><span class="line">	//*********************</span><br><span class="line"> </span><br><span class="line">	//**************************************************************</span><br><span class="line">	//instance of module MODULE_NAME_A filename:module_name_a.v</span><br><span class="line">	//**************************************************************</span><br><span class="line">	MODULE_NAME_A  U_MUDULE_NAME_A(</span><br><span class="line">					.A			(A			),</span><br><span class="line">					.B			(B			),</span><br><span class="line">					.C			(C			)</span><br><span class="line">					);</span><br><span class="line"> </span><br><span class="line">	//*********************</span><br><span class="line">	//MAIN CORE</span><br><span class="line">	//*********************</span><br><span class="line"> </span><br><span class="line">	//Sequential logic style</span><br><span class="line">	always@(posedge clk_* or negedge rest_n)</span><br><span class="line">	begin : SEQ_BLOCK_NAME</span><br><span class="line">		if (rst_n==1’b0)</span><br><span class="line">			counter&lt;=4’b0;</span><br><span class="line">		else</span><br><span class="line">			begin</span><br><span class="line">				if (expression)</span><br><span class="line">					counter &lt;= #`DLY siginal_b;</span><br><span class="line">				else;</span><br><span class="line">			end</span><br><span class="line">	end // SEQ_BLOCK_NAME</span><br><span class="line"> </span><br><span class="line">	//Combinational logic style</span><br><span class="line">	always@(signal_a or signal_b)</span><br><span class="line">	begin:COM_BLOCK-NAME</span><br><span class="line">		case (expression)</span><br><span class="line">			item1    :begin</span><br><span class="line">						 signal_c=*****;</span><br><span class="line">					  end</span><br><span class="line">			item2    : //statement;</span><br><span class="line">			default   ://statement;</span><br><span class="line">		endcase</span><br><span class="line">	end // COM_BLOCK_NAME</span><br><span class="line"> </span><br><span class="line">	assign	out	= expression ? (1’b0):(1’b1);</span><br><span class="line"> </span><br><span class="line">	//*********************</span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure></p>
 
-        
-      
     </div>
 
     
     
     
+        
+      
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>daiwenji</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/04/24/verilog初探/" title="verilog学习">http://yoursite.com/2018/04/24/verilog初探/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+</div>
+
+      
+
       <footer class="post-footer">
-          <div class="post-eof"></div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/08/16/hello-world/" rel="prev" title="Hello World">
+                  Hello World <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
         
       </footer>
+    
   </div>
   
   
   
   </article>
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -638,6 +583,9 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.3.0"></script><script src="/js/post-details.js?v=7.3.0"></script>
+
+
 </body>
 </html>
 
