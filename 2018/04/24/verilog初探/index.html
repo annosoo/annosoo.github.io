@@ -55,17 +55,17 @@
   };
 </script>
 
-  <meta name="description" content="FPGA verilog基本理解构建硬件电路，无需ASIC（专用集成电路）相比微处理器内核 简单 快速 省电 相比ASIC和MCU：大量并行结构，可实现数字设计领域几乎所有功能">
+  <meta name="description" content="FPGA verilog基本理解构建硬件电路，无需ASIC（专用集成电路）相比微处理器内核 简单 快速 省电相比ASIC和MCU：大量并行结构，可实现数字设计领域几乎所有功能">
 <meta property="og:type" content="article">
-<meta property="og:title" content="verilog基础">
+<meta property="og:title" content="verilog初探">
 <meta property="og:url" content="http://yoursite.com/2018/04/24/verilog初探/index.html">
 <meta property="og:site_name" content="annosoo&#39;s blog">
-<meta property="og:description" content="FPGA verilog基本理解构建硬件电路，无需ASIC（专用集成电路）相比微处理器内核 简单 快速 省电 相比ASIC和MCU：大量并行结构，可实现数字设计领域几乎所有功能">
+<meta property="og:description" content="FPGA verilog基本理解构建硬件电路，无需ASIC（专用集成电路）相比微处理器内核 简单 快速 省电相比ASIC和MCU：大量并行结构，可实现数字设计领域几乎所有功能">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-17T02:27:01.370Z">
+<meta property="og:updated_time" content="2019-08-19T03:25:24.984Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="verilog基础">
-<meta name="twitter:description" content="FPGA verilog基本理解构建硬件电路，无需ASIC（专用集成电路）相比微处理器内核 简单 快速 省电 相比ASIC和MCU：大量并行结构，可实现数字设计领域几乎所有功能">
+<meta name="twitter:title" content="verilog初探">
+<meta name="twitter:description" content="FPGA verilog基本理解构建硬件电路，无需ASIC（专用集成电路）相比微处理器内核 简单 快速 省电相比ASIC和MCU：大量并行结构，可实现数字设计领域几乎所有功能">
   <link rel="canonical" href="http://yoursite.com/2018/04/24/verilog初探/">
 
 
@@ -80,7 +80,7 @@
   };
 </script>
 
-  <title>verilog基础 | annosoo's blog</title>
+  <title>verilog初探 | annosoo's blog</title>
   
 
 
@@ -240,7 +240,7 @@
       <meta itemprop="name" content="annosoo's blog">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">verilog基础
+        <h1 class="post-title" itemprop="name headline">verilog初探
 
           
         </h1>
@@ -267,7 +267,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-08-17 10:27:01" itemprop="dateModified" datetime="2019-08-17T10:27:01+08:00">2019-08-17</time>
+                <time title="修改时间：2019-08-19 11:25:24" itemprop="dateModified" datetime="2019-08-19T11:25:24+08:00">2019-08-19</time>
               </span>
             
           
@@ -303,8 +303,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="FPGA-verilog"><a href="#FPGA-verilog" class="headerlink" title="FPGA verilog"></a>FPGA verilog</h1><h2 id="基本理解"><a href="#基本理解" class="headerlink" title="基本理解"></a>基本理解</h2><p>构建硬件电路，无需ASIC（专用集成电路）相比微处理器内核 简单 快速 省电</p>
-<p>相比ASIC和MCU：大量并行结构，可实现数字设计领域几乎所有功能<br><a id="more"></a></p>
+        <h1 id="FPGA-verilog"><a href="#FPGA-verilog" class="headerlink" title="FPGA verilog"></a>FPGA verilog</h1><h2 id="基本理解"><a href="#基本理解" class="headerlink" title="基本理解"></a>基本理解</h2><p>构建硬件电路，无需ASIC（专用集成电路）相比微处理器内核 简单 快速 省电<br>相比ASIC和MCU：大量并行结构，可实现数字设计领域几乎所有功能<br><a id="more"></a></p>
 <h2 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h2><p>善用 IP Core：原厂提供经过验证的IP内核  官方网站文档介绍<br>国际知名开源网站上的IP核：比如<a href="http://www.opencores.org" target="_blank" rel="noopener">www.opencores.org</a></p>
 <p>代码规范：硬禾实战营Verilog代码规范</p>
 <p>通过软核构成嵌入式系统</p>
@@ -325,8 +324,7 @@
 <h5 id="Examples-1"><a href="#Examples-1" class="headerlink" title="Examples:"></a>Examples:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">integer counter;</span><br><span class="line">initial</span><br><span class="line">counter = -1;</span><br></pre></td></tr></table></figure>
 <h4 id="real"><a href="#real" class="headerlink" title="real"></a>real</h4><p>实型变量 默认值0 不能范围声明 </p>
 <h5 id="Example-2"><a href="#Example-2" class="headerlink" title="Example:"></a>Example:</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">real delta;</span><br><span class="line">initial</span><br><span class="line">begin</span><br><span class="line">delta=4e10;</span><br><span class="line">delta=2.13;</span><br><span class="line">end</span><br><span class="line">integer i;</span><br><span class="line">initial</span><br><span class="line">i = delta; // i gets the value 2 (rounded value of 2.13)</span><br></pre></td></tr></table></figure>
-<h4 id="time"><a href="#time" class="headerlink" title="time"></a>time</h4><p>用来存储仿真时间的值<br>time save_sim_time;<br>initial<br>save_sim_time = $time;</p>
-<p>arrays 数组（只限一维）支持 reg integer time</p>
+<h4 id="time"><a href="#time" class="headerlink" title="time"></a>time</h4><p>用来存储仿真时间的值<br>time save_sim_time;<br>initial<br>save_sim_time = $time;<br>arrays 数组（只限一维）支持 reg integer time</p>
 <p>&lt;data_type&gt; &lt;var_name&gt;[start_idx : end_idx];</p>
 <p>#####Examples:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">integer count[0:7];</span><br><span class="line">reg bool[31:0];</span><br><span class="line">time chk_point[1:100];</span><br><span class="line">reg [4:0] port_id[0:7];</span><br><span class="line">integer matrix[4:0][4:0]; // illegal</span><br></pre></td></tr></table></figure></p>
 <h3 id="数据值"><a href="#数据值" class="headerlink" title="数据值"></a>数据值</h3><h4 id="数字"><a href="#数字" class="headerlink" title="数字"></a>数字</h4><p>Value of 23:<br>5’b10111 // Binary<br>5’d23 // Decimal<br>5’h17 // Hex</p>
@@ -369,7 +367,7 @@
     <strong>本文作者： </strong>daiwenji</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2018/04/24/verilog初探/" title="verilog基础">http://yoursite.com/2018/04/24/verilog初探/</a>
+    <a href="http://yoursite.com/2018/04/24/verilog初探/" title="verilog初探">http://yoursite.com/2018/04/24/verilog初探/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
