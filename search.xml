@@ -4,6 +4,108 @@
   
     
     <entry>
+      <title>dos快捷键</title>
+      <link href="/2019/08/24/dos%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+      <url>/2019/08/24/dos%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+      
+        <content type="html"><![CDATA[<p>#快捷键<br>cd..    返回上一层目录<br>cd\        返回到根目录<br>cd c:\    切换到c盘根目录<br>d:        切换到d盘根目录</p><p>dir        查看目录结构<br>md        创建目录<br>rd        删除目录</p><p>exit     退出dos命令行<br>cls        清屏</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 小技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> dos </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Pycharm快捷键</title>
+      <link href="/2019/08/24/Pycharm%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+      <url>/2019/08/24/Pycharm%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+      
+        <content type="html"><![CDATA[<p>#快捷键<br>ctrl + d 快速复制上一行内容至下一行</p><p>ctrl + alt + l 调整代码格式</p><p>ctrl + / 行注释</p><p>shift + alt + F10 运行 </p><p>ctrl + Y 删除选定的行</p><p>ctrl + f 查找</p><p>ctrl + r 替换</p><p>ctrl+shift+ enter 换行</p><p>鼠标三击选中一行</p><p>ctrl+alt+L 代码格式化</p><p>#正则替换<br>将浏览器复制的headers替换成字典格式<br>(.<em>):(.</em>)<br>‘$1’:’$2’,</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 小技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> pycharm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Chrome快捷键</title>
+      <link href="/2019/08/24/Chrome%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+      <url>/2019/08/24/Chrome%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+      
+        <content type="html"><![CDATA[<p>#标签页和窗口快捷键</p><p>Ctrl + n 打开新窗口</p><p>Ctrl + t 打开新的标签页，并跳转到该标签页</p><p>Ctrl + Shift + t 重新打开最后关闭的标签页，并跳转到该标签页</p><p>Alt + Home 在当前标签页中打开主页</p><p>Ctrl + Shift + q 退出Chrome浏览器</p><p>#功能快捷键</p><p>Ctrl + Shift + b 显示或隐藏书签栏</p><p>Ctrl + h 在新标签页中打开”历史记录”页</p><p>Ctrl + j 在新标签页中打开”下载内容”页</p><p>#网页快捷键</p><p>Ctrl + u 显示当前网页的 HTML 源代码</p><p>Ctrl + d 将当前网页保存为书签</p><p>空格键或 PgDn 向下滚动网页，一次一个屏幕</p><p>ctrl + shift + c 点击定位查看指定位置页面元素</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 小技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> chrome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo+github个人博客</title>
+      <link href="/2019/08/24/hexo-github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2019/08/24/hexo-github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<p>#博客搭建</p><p>##创建Repository：<br>仓库名username.github.io</p><p>##绑定域名（可跳过）</p><p>##安装hexo</p><p>##初始化</p><p>##修改主题</p><p>##上传到GitHub</p><p>##写博客</p><p>###新建md<br>hexo根目录 执行 hexo new ‘my-first-blog’<br>hexo会在-posts下生成相关md文件</p><p>###设置文章摘要长度<br>在合适的位置加上<a id="more"></a></p><p>#更换主题</p><p>##github官方主题界面<br><a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p><p>##复制仓库下载主题<br>Windows 系统可以使用 Git-bash<br>git clone <a href="https://github.com/username/username.git" target="_blank" rel="noopener">https://github.com/username/username.git</a></p><p>##更改hexo工程目录下的配置文件_config.yml 修改主题名theme</p><p>##清空public缓存<br>hexo clean </p><p>##重新生成datebase<br>hexo g</p><p>##打开本地仓库服务<br>hexo s</p><p>##上传到远程仓库<br>hexo d</p><p>##输入域名，完成！</p><p>##可能遇到的问题<br>git config –global user.email “<a href="mailto:annosoo2873@gmail.com" target="_blank" rel="noopener">annosoo2873@gmail.com</a>“<br>git config –global user.name “annosoo”</p><p>#Markdown语法</p><p>##标题<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#一级标题               </span><br><span class="line">##二级标题</span><br><span class="line">###三级标题</span><br></pre></td></tr></table></figure></p><p>##内容强调<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">**加粗**</span><br><span class="line">*斜体*</span><br><span class="line">***加粗并斜体***</span><br></pre></td></tr></table></figure></p><p>##代码块<br>```<br>中间是代码<br>```</p><p>#一键部署快捷命令<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 小技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《python编程导论》要点整理</title>
       <link href="/2019/08/17/python/"/>
       <url>/2019/08/17/python/</url>
